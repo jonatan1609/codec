@@ -8,8 +8,8 @@ def search_function(encoding):
         return CodecInfo(
             name="my_custom_encoding",
             encode=utf_8.encode,
-            decode=decode,
-            incrementaldecoder=IncrementalDecoder
+            decode=decode, # noqa
+            incrementaldecoder=IncrementalDecoder # noqa
         )
 
 
